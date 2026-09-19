@@ -1,49 +1,220 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f4f4f4;
-    color: #222;
+/* ---------- Base ---------- */
+
+* {
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #24292f;
+    line-height: 1.6;
+}
+
+a {
+    color: #0969da;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/* ---------- Header ---------- */
+
 header {
-    background-color: #222;
+    background-color: #161b22;
     color: white;
-    padding: 20px;
+    padding: 25px 20px;
+}
+
+.header-container {
+    max-width: 1000px;
+    margin: auto;
 }
 
 header h1 {
     margin: 0;
+    font-size: 1.8rem;
 }
 
+.tagline {
+    color: #b1bac4;
+    margin: 5px 0 15px 0;
+}
+
+
+/* ---------- Navigation ---------- */
+
 nav {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 nav a {
-    color: white;
+    color: #f0f6fc;
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 25px;
+    font-weight: bold;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #58a6ff;
 }
 
+
+/* ---------- Main Content ---------- */
+
 main {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 40px auto;
     padding: 0 20px;
 }
 
 section {
     background-color: white;
-    padding: 25px;
+    padding: 30px;
     margin-bottom: 25px;
     border-radius: 8px;
+    border: 1px solid #d0d7de;
 }
+
+h2 {
+    margin-top: 0;
+}
+
+h2,
+h3,
+h4 {
+    color: #1f2328;
+}
+
+
+/* ---------- Blog Posts ---------- */
+
+.post-preview {
+    border-bottom: 1px solid #d8dee4;
+    padding: 20px 0;
+}
+
+.post-preview:last-child {
+    border-bottom: none;
+}
+
+.post-preview h3 {
+    margin: 0;
+}
+
+.post-preview h3 a {
+    text-decoration: none;
+}
+
+.post-preview h3 a:hover {
+    text-decoration: underline;
+}
+
+.post-date {
+    color: #656d76;
+    font-size: 0.9rem;
+}
+
+
+/* ---------- Articles ---------- */
+
+article {
+    max-width: 800px;
+}
+
+article h2 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+article h3 {
+    margin-top: 35px;
+    border-bottom: 1px solid #d8dee4;
+    padding-bottom: 5px;
+}
+
+article p {
+    margin: 18px 0;
+}
+
+
+/* ---------- Code ---------- */
+
+code {
+    font-family: Consolas, "Courier New", monospace;
+    background-color: #eff1f3;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+pre {
+    background-color: #161b22;
+    color: #f0f6fc;
+    padding: 18px;
+    border-radius: 6px;
+    overflow-x: auto;
+    line-height: 1.5;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    color: inherit;
+}
+
+
+/* ---------- Technical Callouts ---------- */
+
+.note {
+    background-color: #ddf4ff;
+    border-left: 4px solid #0969da;
+    padding: 15px 20px;
+    margin: 25px 0;
+}
+
+.warning {
+    background-color: #fff8c5;
+    border-left: 4px solid #9a6700;
+    padding: 15px 20px;
+    margin: 25px 0;
+}
+
+
+/* ---------- Footer ---------- */
 
 footer {
     text-align: center;
-    padding: 20px;
-    color: #666;
+    color: #656d76;
+    padding: 25px;
+    font-size: 0.9rem;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 15px 5px 0;
+    }
+
+    main {
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    article h2 {
+        font-size: 1.6rem;
+    }
 }
