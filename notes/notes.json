@@ -14,10 +14,10 @@
                 "type": "folder",
                 "children": [
                     {
-                        "name": "System Architecture",
+                        "name": "ITEC 428 - Testing & Vulnerability Analysis",
                         "type": "file",
-                        "slug": "classes/itec416/system-architecture",
-                        "file": "notes/classes/itec416/system-architecture.md"
+                        "slug": "classes/itec428/testing-vulnerability-analysis",
+                        "file": "notes/classes/itec428/testing-vulnerability-analysis.md"
                     }
                 ]
             }
