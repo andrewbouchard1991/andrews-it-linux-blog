@@ -355,6 +355,10 @@ footer {
     line-height: 1.75;
 }
 
+.markdown-body:focus {
+    outline: none;
+}
+
 .markdown-body h1,
 .markdown-body h2 {
     border-bottom: 1px solid #d8dee4;
