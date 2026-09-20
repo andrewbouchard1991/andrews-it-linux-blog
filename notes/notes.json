@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Class Notes",
+        "type": "folder",
+        "children": [
+            {
+                "name": "Overview",
+                "type": "file",
+                "slug": "classes/overview",
+                "file": "notes/classes/overview.md"
+            },
+            {
+                "name": "ITEC 416 - System Integration",
+                "type": "folder",
+                "children": [
+                    {
+                        "name": "System Architecture",
+                        "type": "file",
+                        "slug": "classes/itec416/system-architecture",
+                        "file": "notes/classes/itec416/system-architecture.md"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "CCNA Notes",
+        "type": "folder",
+        "children": [
+            {
+                "name": "Overview",
+                "type": "file",
+                "slug": "ccna/overview",
+                "file": "notes/ccna/overview.md"
+            },
+            {
+                "name": "01 - Network Fundamentals",
+                "type": "folder",
+                "children": [
+                    {
+                        "name": "ARP",
+                        "type": "file",
+                        "slug": "ccna/network-fundamentals/arp",
+                        "file": "notes/ccna/network-fundamentals/arp.md"
+                    }
+                ]
+            },
+            {
+                "name": "02 - Switching",
+                "type": "folder",
+                "children": [
+                    {
+                        "name": "VLANs",
+                        "type": "file",
+                        "slug": "ccna/switching/vlans",
+                        "file": "notes/ccna/switching/vlans.md"
+                    }
+                ]
+            },
+            {
+                "name": "03 - Routing",
+                "type": "folder",
+                "children": [
+                    {
+                        "name": "OSPF",
+                        "type": "file",
+                        "slug": "ccna/routing/ospf",
+                        "file": "notes/ccna/routing/ospf.md"
+                    }
+                ]
+            }
+        ]
+    }
+]
