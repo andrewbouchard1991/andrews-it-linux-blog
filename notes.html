@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Class and CCNA notes from Andrew's IT and networking studies.">
+    <title>Notes | Andrew's IT & Linux Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="header-container">
+        <h1>Andrew's IT & Linux Blog</h1>
+
+        <p class="tagline">
+            Linux • Networking • Systems • Cloud
+        </p>
+
+        <nav aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="blog.html">Blog</a>
+            <a href="notes.html" aria-current="page">Notes</a>
+        </nav>
+    </div>
+</header>
+
+<main class="notes-page">
+    <div class="notes-shell">
+        <aside class="notes-sidebar" id="notes-sidebar">
+            <div class="notes-sidebar-heading">
+                <h2>Note repository</h2>
+            </div>
+
+            <nav aria-label="Notes folders">
+                <ul class="notes-tree" id="notes-tree">
+                    <li class="notes-status">Loading notes…</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <div class="notes-content">
+            <div class="notes-toolbar">
+                <button class="notes-menu-button" id="notes-menu-button" type="button"
+                        aria-label="Open notes folders" aria-controls="notes-sidebar" aria-expanded="false">
+                    ☰
+                </button>
+                <div class="notes-breadcrumbs" id="notes-breadcrumbs">Notes</div>
+            </div>
+
+            <article class="markdown-body" id="note-viewer" tabindex="-1" hidden></article>
+
+            <div class="notes-welcome" id="notes-welcome">
+                <h1>Notes</h1>
+                <p>Browse my class notes and networking study notes.</p>
+
+                <div class="notes-entry-grid">
+                    <a class="notes-entry-card" href="?note=classes/overview">
+                        <h2>Class Notes</h2>
+                        <p>Course concepts, study material, and project references from my IT coursework.</p>
+                        <span class="notes-entry-link">Browse class notes →</span>
+                    </a>
+
+                    <a class="notes-entry-card" href="?note=ccna/overview">
+                        <h2>CCNA Notes</h2>
+                        <p>Networking fundamentals, routing, switching, commands, and troubleshooting notes.</p>
+                        <span class="notes-entry-link">Browse CCNA notes →</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>Andrew's IT & Linux Blog</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="js/notes.js"></script>
+
+</body>
+</html>
