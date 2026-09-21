@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Basic Git Workflow | Andrew's IT & Linux Blog</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="header-container">
+
+        <h1>Andrew's IT & Linux Blog</h1>
+
+        <p class="tagline">
+            Linux • Networking • Systems • Cloud
+        </p>
+
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../projects.html">Projects</a>
+            <a href="../blog.html" aria-current="page">Blog</a>
+            <a href="../notes.html">Notes</a>
+            <a href="../it-experience.html">IT Experience</a>
+            <a href="../business-ideas.html">Business Ideas</a>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+    <section>
+        <article>
+
+            <h2>My Basic Git Workflow for Updating a Website</h2>
+
+            <p>
+                <strong>Published:</strong> September 20, 2026
+            </p>
+
+            <p>
+                When I update my website, I use Git to track my changes,
+                save checkpoints, and push the finished updates to GitHub.
+            </p>
+
+            <h3>1. Edit and Test Locally</h3>
+
+            <p>
+                I make changes to my HTML and CSS files in VS Code, save them,
+                and preview the website locally before pushing anything.
+            </p>
+
+            <h3>2. Check What Changed</h3>
+
+            <pre><code>git status</code></pre>
+
+            <p>
+                This shows which files have been modified.
+            </p>
+
+            <h3>3. Stage the Changes</h3>
+
+            <pre><code>git add .</code></pre>
+
+            <p>
+                This stages all current changes so they can be included
+                in the next commit.
+            </p>
+
+            <h3>4. Create a Commit</h3>
+
+            <pre><code>git commit -m "Describe the changes"</code></pre>
+
+            <p>
+                A commit creates a saved checkpoint in the project's Git history.
+            </p>
+
+            <h3>5. Push to GitHub</h3>
+
+            <pre><code>git push</code></pre>
+
+            <p>
+                This sends my local commits to the GitHub repository.
+            </p>
+
+            <h3>Working With a Separate Branch</h3>
+
+            <p>
+                If I make changes on a separate branch, I merge that branch
+                into <code>main</code> when the changes are ready.
+            </p>
+
+            <pre><code>git checkout main
+git pull origin main
+git merge branch-name
+git push origin main</code></pre>
+
+            <div class="note">
+                <strong>Basic Workflow:</strong>
+                Edit → Test → Stage → Commit → Push → Merge → Deploy
+            </div>
+
+            <h3>Deployment</h3>
+
+            <p>
+                Once the <code>main</code> branch is updated on GitHub,
+                Cloudflare automatically deploys the newest version of my website.
+            </p>
+
+            <div class="note">
+                <strong>Key Concepts:</strong><br>
+                Saving changes updates the files on my computer.<br>
+                Committing creates a Git checkpoint.<br>
+                Pushing sends those commits to GitHub.<br>
+            </div>
+
+        </article>
+    </section>
+
+</main>
+
+<footer>
+    <p>Andrew's IT & Linux Blog</p>
+</footer>
+
+</body>
+
+</html>
